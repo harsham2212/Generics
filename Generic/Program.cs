@@ -11,7 +11,7 @@ namespace Generic
                 bool flag = true;
                 while (flag)
                 {
-                    Console.WriteLine("Choose Options: \n 1.find maximum integer\n 2. find max float\n 3.exit \n");
+                    Console.WriteLine("Choose Options: \n 1.find maximum integer\n 2. find max float\n 3. find max string\n 4.exit \n");
                     int option = Convert.ToInt32(Console.ReadLine());
                     switch (option)
                     {
@@ -24,7 +24,7 @@ namespace Generic
                             Console.WriteLine("Max Number is: " + max);
                             break;
                         case 2:
-                            Console.WriteLine("Enter Three Float Numbers to find");
+                            Console.WriteLine("Enter Three Float Numbers to find:");
                             double firstNumb = Convert.ToDouble(Console.ReadLine());
                             double secondNumb = Convert.ToDouble(Console.ReadLine());
                             double thirdNumb = Convert.ToDouble(Console.ReadLine());
@@ -32,6 +32,14 @@ namespace Generic
                             Console.WriteLine("Max Number is: " + result);
                             break;
                         case 3:
+                            Console.WriteLine("Enter Three String to find:");
+                            String firstString = Convert.ToString(Console.ReadLine());
+                            String secondString = Convert.ToString(Console.ReadLine());
+                            String thirdString = Convert.ToString(Console.ReadLine());
+                            String res = LargestInteger.MaxString(firstString, secondString, thirdString);
+                            Console.WriteLine("Largest String is: " + res);
+                            break;
+                        case 4:
                             flag = false;
                             break;
                     }
