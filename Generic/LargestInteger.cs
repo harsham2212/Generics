@@ -21,5 +21,24 @@ namespace Generic
                 return thirdNum;
             }
         }
+
+        // UseCase2 : Given 3 Floats find the maximum
+
+
+        public static double FindMax(double firstNumber, double secondNumber, double thirdNumber)
+        {
+            if (firstNumber.CompareTo(secondNumber) > 0 && firstNumber.CompareTo(thirdNumber) > 0)
+            {
+                return firstNumber;
+            }
+            if (secondNumber.CompareTo(firstNumber) > 0 && secondNumber.CompareTo(thirdNumber) > 0)
+            {
+                return secondNumber;
+            }
+            else
+            {
+                return thirdNumber;
+            }
+        }
     }
 }
