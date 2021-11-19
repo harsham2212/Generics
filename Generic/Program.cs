@@ -33,10 +33,10 @@ namespace Generic
                             break;
                         case 3:
                             Console.WriteLine("Enter Three String to find:");
-                            String firstString = Convert.ToString(Console.ReadLine());
-                            String secondString = Convert.ToString(Console.ReadLine());
-                            String thirdString = Convert.ToString(Console.ReadLine());
-                            String res = LargestInteger.MaxString(firstString, secondString, thirdString);
+                            string firstString = Convert.ToString(Console.ReadLine());
+                            string secondString = Convert.ToString(Console.ReadLine());
+                            string thirdString = Convert.ToString(Console.ReadLine());
+                            string res = LargestInteger.MaxString(firstString, secondString, thirdString);
                             Console.WriteLine("Largest String is: " + res);
                             break;
                         case 4:
